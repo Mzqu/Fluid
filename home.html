@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="angular.min.js"></script>
+  <script src="jquery-3.0.0.min.js"></script>
+  <script src="macros.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div ng-app="myApp" ng-controller="myCtrl" class="parentVertical">
+    <input class="textInput col" id="input" ng-model="text" autofocus></input>
+    <div class="child">
+      <div class="row">
+        <text class="linkWord col">{{linkWord}}</text>
+        <div class="space"></div>
+        <colorchange id="display" class="textDisplay"></colorchange>
+        <button class="btn col" id="submit" onclick="openLinks();" disabled>Enter</button>
+      </div>
+    </div>
+  </div>
+
+<script src="logic.js"></script>
+
+</body>
+</html>
